@@ -135,6 +135,7 @@ h1 span{
     display: flex;
 }
 .score{
+    margin-bottom: 35px;
     flex-wrap: wrap;
     display: flex;
     gap: 20px;
@@ -312,5 +313,8 @@ h1 span{
     .web-bio{
     margin-bottom: 30px;
     font-size: 20px;
+    }
+    .score{
+        padding: 10px;
     }
 }
