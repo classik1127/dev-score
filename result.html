@@ -4,13 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Score</title>
-    <!-- <link rel="stylesheet" href=".css"> -->
+    <link rel="stylesheet" href="result.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 <body>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sapiente magnam natus ex modi. Saepe quos debitis minus dolorum cum enim tempore perspiciatis beatae illo velit, aut assumenda modi consequuntur.</p>
+<!-- not found state -->
+ <section id="notfound">
+    <div class="notfound-heading-card">
+        <div class="notfound-profile">
+             <span id="person_search_icon" class="material-symbols-outlined">person_search</span>
+        </div>
+        <p class="notfound-state">User not found</p>
+        <p class="notfound-bio">Check username and try again. The profile you're looking for might have been moved or doesn't exist in our repository.</p>
+    </div>
+    <div class="notfound-btn">
+        <button>Retry</button>
+        <button>Back to Dashboard</button>
+    </div>
+    <div class="notfound-issues">
+        <div class="notfound-issues-div">
+            <div class="notfound-issues-child"><span id="database-icon" class="material-symbols-outlined">help_outline</span></div>
+            <div class="notfound-api-bio">
+                <div>Common Issues</div>
+                <div>Typos in the GitHub handle or private profile settings are the most frequent causes.</div>
+            </div>
+        </div>
+        <div class="notfound-issues-div">
+            <div class="notfound-issues-child"><span id="database-icon" class="material-symbols-outlined">database</span></div>
+            <div class="notfound-api-bio">
+                <div>API Sync</div>
+                <div>New accounts may take up to 5 minutes to appear in our indexed intelligence database.</div>
+            </div>
+        </div>
+    </div>
+
+ </section>
+    
 
 
 <script src="result.js"></script>
 </body>
 </html>
+
+
+
