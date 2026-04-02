@@ -275,14 +275,11 @@ h1 span{
 /* for mobile view */
 
 @media screen and (max-width: 600px){
-    body{
-        background-color: aqua;
-    }
+
+    
     .search-section-child{
-    /* margin: 80px; */
     text-align: center;
-    min-width: 400px;
-    /* max-width: 500px; */
+    min-width: 200px;
     }
     .searchbox input{
         padding-top: 10px;
@@ -301,5 +298,19 @@ h1 span{
     font-weight: 500;
     font-size: 14px;
     line-height: 1;
+    }
+    .heading-bio{
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    }
+    h1{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    }
+    .web-bio{
+    margin-bottom: 30px;
+    font-size: 20px;
     }
 }
