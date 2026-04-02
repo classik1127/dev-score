@@ -14,7 +14,7 @@ body{
 .search-section{
     align-items: center;
     justify-content: center;
-    /* display: flex; */
+    display: flex;
 }
 .search-section-child{
     margin: 110px;
@@ -263,6 +263,7 @@ h1 span{
 @media screen and (max-width: 750px){
     .search-section{
         overflow: hidden;
+        display: block;
     }
     .search-section-child{
         min-width: 200px;
