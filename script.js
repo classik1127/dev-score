@@ -1,4 +1,4 @@
-// fetch("https://api.github.com/users/classik1127/repos")
+// fetch("https://api.github.com/users/classik1127")
 //     .then((response) => response.json())
 //     .then((data) => {
 //         console.log(data);
@@ -30,7 +30,7 @@ function search() {
         return;  
     } 
     let userid = input.value;
-    window.location.href = `result.html?userid=${userid}`
+    window.location.href = `profile.html?userid=${userid}`
     console.log(input.value)
 }
 input.addEventListener("keydown", 

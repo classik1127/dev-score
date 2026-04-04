@@ -1,5 +1,5 @@
-const params = new URLSearchParams(window.location.search)
+// const params = new URLSearchParams(window.location.search)
 
-const userid = params.get("userid");
+// const userid = params.get("userid");
 
-console.log(userid);
+// console.log(userid);
