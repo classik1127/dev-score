@@ -1,5 +1,19 @@
-// const params = new URLSearchParams(window.location.search)
+const params = new URLSearchParams(window.location.search)
 
-// const userid = params.get("userid");
+const userid = params.get("userid");
 
-// console.log(userid);
+
+const notfound = document.getElementById("notfound");
+const found = document.getElementById("found");
+
+fetch(`https://api.github.com/users/${userid}`)
+    .then((response)  =>  {
+        if (response.ok) {
+            window.location.href = `profile.html?userid=${userid}`
+            console.log("frgrgwr")
+        }
+        else{
+                notfound.style.display = "flex";
+                found.style.display = "none";
+        }
+    } )

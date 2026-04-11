@@ -24,8 +24,7 @@ function search() {
         return;  
     } 
     let userid = input.value;
-    window.location.href = `profile.html?userid=${userid}`
-    console.log(input.value)
+    window.location.href = `result.html?userid=${userid}`
 }
 input.addEventListener("keydown", 
     function(event){
