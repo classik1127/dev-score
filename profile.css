@@ -167,6 +167,15 @@ aside{
     color: rgba(0, 0, 0, 0.89);
     font-size: 15px;
 }
+.stats-display2{
+    display: flex;
+}
+.stats-display3{
+    width: 80px;
+    /* height: ; */
+    background-color: rgb(248, 238, 229);
+    color: rgb(161, 71, 0);
+}
 
 
 
