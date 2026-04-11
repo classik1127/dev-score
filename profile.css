@@ -40,7 +40,7 @@ aside{
 .prodile-pic-card{
     position: relative;
     border-radius: 40px;
-    background-color: black;
+    background-color: transparent;
     width: 220px;
     height: 220px;
 }
@@ -50,8 +50,15 @@ aside{
     content: '';
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: transparent;
     position: absolute;
+}
+#userimage{
+    z-index: 999;
+    width: 230px;
+    height: 230px;
+    border-radius: 40px;
+    object-fit: cover;
 }
 .profile-bio{
     flex: 1;

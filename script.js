@@ -1,9 +1,3 @@
-// fetch("https://api.github.com/users/classik1127")
-//     .then((response) => response.json())
-//     .then((data) => {
-//         console.log(data);
-//     });
-
 
 const input = document.getElementById("input");
 const feedback = document.getElementById("feedback");
