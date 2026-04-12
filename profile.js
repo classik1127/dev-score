@@ -1,3 +1,9 @@
+const params = new URLSearchParams(window.location.search)
+
+const userid = params.get("userid");
+
+
+
 const userimage = document.getElementById("userimage");
 const username = document.getElementById("username");
 const profilestage = document.getElementById("profilestage");
@@ -13,9 +19,9 @@ const user_following = document.getElementById("user_following");
 // const username = document.getElementById("username");
 
 
-// 
+// for fetching data from github api and displaying it on the profile page
 
-fetch("https://api.github.com/users/classik1127")
+fetch(`https://api.github.com/users/${userid}`)
     .then((response) => response.json())
     .then((data) => {
         let datainfo = data;
@@ -27,13 +33,18 @@ fetch("https://api.github.com/users/classik1127")
         userlocation.textContent = datainfo.location;
         url.href = datainfo.html_url;
         url.textContent = datainfo.html_url.slice(19);
-        userfollowers.textContent = datainfo.followers;
+        userfollowers.textContent = datainfo.followers.toLocaleString();
         user_public_repos.textContent = datainfo.public_repos;
         user_following.textContent = datainfo.following;
 
 
 
 
+        if (userlocation.textContent === "") {
+            userlocation.textContent = "Not Available";
+        }
 
     });
+
+
 
