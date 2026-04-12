@@ -21,6 +21,11 @@ aside{
     background-color: rgb(244, 248, 254);
     color: hsl(221, 83%, 53%);
 }
+#profilepage2{
+    border-bottom: 5px solid hsl(221, 83%, 53%);
+    background-color: rgb(244, 248, 254);
+    color: hsl(221, 83%, 53%);
+}
 #main{
     padding-left: 20px;
 }

@@ -33,7 +33,30 @@ nav{
 }
 .mobile-nav{
     display: none;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.mobile-nav-container{
+    border-top: 1px solid rgba(0, 0, 0, 0.295);
+    display: flex;
+    justify-content: space-around;
+}
+#navbar-content{
+    font-size: 1.2em;
+}
+.mobile-nav-container span:first-child{
+    transform: translateY(5px);
+}
+.nav-card2{
+    cursor: pointer;
+    padding: 10px;
+    padding-bottom: 8px;
+}
+.nav-card2:hover{
+    background-color: hsl(210, 3%, 86%);
 }
 
 
@@ -55,10 +78,15 @@ nav{
         display: none;
     }
     .mobile-nav{
-        display: none;
+        display: block;
     }
     aside{
         width: fit-content;
         margin-right: 0;
+    }
+}
+@media screen and (max-width: 378px){
+    #navbar-content{
+        display: none;
     }
 }
