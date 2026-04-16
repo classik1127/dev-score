@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"></head>
 <body>
     <section class="search-section"> 
         <h1>Analyze GitHub Profiles <span>Instantly</span> 🚀</h1>
@@ -15,9 +16,10 @@
             <center>
 
                 <div class="search-section-searchbox">
-                    <input type="text" placeholder="Enter your Github username">
-                    <button>Analyze</button>
+                    <input id="input" type="text" placeholder="Enter your Github username" autocomplete="off">
+                    <button onclick="search()">Analyze</button>
                 </div>
+                <div id="feedback">Please enter your username</div>
                 <div class="search-section-fact">
                     <p>Trusted by 10k+ Devs</p>
                     <p>Real-time API Sync</p>
@@ -26,28 +28,6 @@
             </center>
             </div> 
     </section>
-    <section class="repoandlang">
-        <div class="repository-parent">
-            <div class="repo-icon">
-                <span class="material-symbols-outlined">analytics</span>
-            </div>
-            <h3>Repository Insights</h3>
-            <p>Deep dive into commit velocity, fork impact, and maintainer reputation across your entire portfolio.</p>
-            <div class="repo-pics"></div>
-        </div>
-        <div class="language-parent">
-            <div class="repo-icon">
-                <span class="material-symbols-outlined">code_blocks</span>
-            </div>
-            <h3>Language Analysis</h3>
-            <p>We don't just count lines. We analyze complexity, library dependencies, and syntax diversity.</p>
-            <div class="lang-pics-parent">
-                <div class="language-card">TypeScript</div>
-                <div class="language-card">Rust</div>
-                <div class="language-card">Python</div>
-                <div class="language-card">Go</div>
-            </div>
-        </div>
-    </section>
+    <script src="script.js"></script>
 </body>
 </html>
