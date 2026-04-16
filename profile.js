@@ -39,7 +39,6 @@ fetch(`https://api.github.com/users/${userid}`)
 
 
 
-
         if (userlocation.textContent === "") {
             userlocation.textContent = "Not Available";
         }
@@ -48,3 +47,8 @@ fetch(`https://api.github.com/users/${userid}`)
 
 
 
+fetch(`https://api.github.com/users/${userid}/repos`)
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data);
+    });
