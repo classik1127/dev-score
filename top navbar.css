@@ -1,10 +1,13 @@
 .topnavbar{
+    align-items: center;
     padding: 10px;
     background-color: hsl(222, 55%, 10%);
     display: flex;
     justify-content: space-between;
+    height: 40px;
 }
 .topnavbar-card{
+    color: white;
     font-size: 20px;
     font-weight: 600;
     font-family: 'Franklin Gothic Medium';
