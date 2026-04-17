@@ -4,30 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Score</title>
-    <link rel="stylesheet" href="result.css">
+    <link rel="stylesheet" href="not found.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 <body>
-
-<!-- found state -->
-
-<section id="found">
-
-    <div class="foundcontianer">
-        <div class="foundlogo">
-            <span id="terminal-icon" class="material-symbols-outlined">terminal</span>
-        </div>
-        <h1>DEVSCORE</h1>
-        <div class="foundcard">
-            <span id="query-icon" class="material-symbols-outlined">query_stats</span>
-        </div>
-        <h5>Analyzing profile</h5>
-        <p>Our digital curator is indexing repositories and calculating engineering velocity metrics.</p>
-    </div>
-</section>
-<!-- not found state -->
- <section id="notfound" style="display: none;">
+<section id="notfound" >
     <div class="notfound-heading-card">
         <div class="notfound-profile">
              <span id="person_search_icon" class="material-symbols-outlined">person_search</span>
@@ -36,10 +18,10 @@
         <p class="notfound-bio">Check username and try again. The profile you're looking for might have been moved or doesn't exist in our repository.</p>
     </div>
     <div class="notfound-btn">
-        <button>Retry</button>
-        <button>Back to Dashboard</button>
+        <button><span class="material-symbols-outlined">refresh</span>Retry</button>
+        <button onclick="back()">Back to Homepage</button>
     </div>
-    <div class="notfound-issues">
+    <!-- <div class="notfound-issues">
         <div class="notfound-issues-div">
             <div class="notfound-issues-child"><span id="database-icon" class="material-symbols-outlined">help_outline</span></div>
             <div class="notfound-api-bio">
@@ -54,15 +36,10 @@
                 <div>New accounts may take up to 5 minutes to appear in our indexed intelligence database.</div>
             </div>
         </div>
-    </div>
+    </div> -->
 
  </section>
-    
-
 
 <script src="not found.js"></script>
 </body>
 </html>
-
-
-

@@ -41,6 +41,7 @@ body{
 .search-section h1 span{
     background: linear-gradient( to right, rgb(162, 200, 254), hsl(213, 76%, 61%));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .search-section-bio{

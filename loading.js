@@ -9,9 +9,9 @@ const found = document.getElementById("found");
 fetch(`https://api.github.com/users/${userid}`)
     .then((response)  =>  {
         if (response.ok) {
-            window.location.href = `profile.html?userid=${userid}`
+            // window.location.href = `profile.html?userid=${userid}`
         }
         else{
-            window.location.href =" notfound.html?"
+            window.location.href ="not found.html?"
         }
     } )

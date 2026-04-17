@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:hsl(222, 42%, 13%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.topnavbar-child{
+    display: none;
+}
+#notfound{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.notfound-heading-card{
+    text-align: center;
+}
+.notfound-profile{
+    box-shadow: 1px 1px 10px 1px hsl(219, 33%, 24%);
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50%;
+    background-color: hsl(222, 55%, 10%);
+    width: 130px;
+    height: 130px;
+    margin-bottom: 30px;
+}
+.notfound-state{
+    color: white;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+.notfound-bio{
+    color: rgba(255, 255, 255, 0.781);
+    font-weight: 500;
+    font-size: 20px;
+    max-width: 480px;
+    margin-bottom: 50px;
+}
+.notfound-btn{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.notfound-btn button{
+    cursor: pointer;
+    height: 50px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    transition: all 0.2s ease-in-out;
+    background-color:hsl(213, 77%, 62%);
+    color: hsl(209, 100%, 16%);
+}
+.notfound-btn span{
+    transform: scale(0.9) translateX(-2px) translateY(5px);
+}
+.notfound-btn button:first-child:hover{
+    background-color: hsl(213, 77%, 52%);
+}
+.notfound-btn button:active{
+    transform: scale(0.9);
+}
+.notfound-btn button:last-child{
+    color: hsl(216, 100%, 82%);
+    background-color: hsl(225, 24%, 23%);
+    width: 200px;
+}
+.notfound-btn button:last-child:hover{
+    background-color:  hsl(224, 12%, 25%);
+}
+.notfound-issues{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.notfound-issues-div{
+    display: flex;
+    background-color: hsla(235, 77%, 92%, 0.5);
+    max-width: 450px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 25px;
+    gap: 14px;
+}
+.notfound-issues-div:hover{
+    background-color: hsl(240, 49%, 89%);
+}
+.notfound-issues-child{
+    border-radius: 9px;
+    width: 40px;
+    height: 48px;
+    background-color: white;
+}
+.notfound-api-bio{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.notfound-api-bio div:first-child{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.699);
+}
+.notfound-api-bio div:last-child{
+    font-size: 16=7px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.692);
+}
+#person_search_icon{
+    font-size: 3.2rem;
+    color: hsl(219, 33%, 24%);
+    transform: translatey(38px);
+}
+#database-icon{
+    color: hsl(219, 33%, 24%);
+    transform: translatey(8px); 
+    padding: 5px;  
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 410px){
+    .notfound-issues-div{
+        max-width: 250px;
+    }
+    .notfound-btn{
+        flex-direction: column;
+    }
+    .notfound-btn button{
+        width: 100%;
+    }
+}
