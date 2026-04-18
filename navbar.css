@@ -85,8 +85,3 @@ nav{
         margin-right: 0;
     }
 }
-@media screen and (max-width: 378px){
-    #navbar-content{
-        display: none;
-    }
-}
