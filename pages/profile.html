@@ -9,63 +9,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 <body>
-    <aside id="aside-navbar" class="aside-navbar">
-    </aside>
-    <main id="main">
 
-        <section class="top-profile">
-            <div class="prodile-pic-card">
-                <img src="" alt="" id="userimage">
+    <section class="top_section">
+        <div class="top_section_card">
+            <div class="intro_card">
+                <div class="profile_image_card"><img id="userimage" src="../assets/image/image.png" alt="profile image"></div>
+                <p id="username">alex_dev_ops</p>
             </div>
-            <div class="profile-bio">
-                <div class="profile-name-rank">
-                    <h1 id="username"></h1>
-                    <p id="profilestage">Gold contributor</p>
+            <p class="user_bio">"<span id="userbio">Building distributed systems and exploring the intersection of large language models and automated code review.</span>"</p>
+            <div class="top_ection_stat">
+                <div class="top_section_stat_card">
+                    <p id="userfollowers" class="stat_number"></p>
+                    <p class="stat_info">Followers</p>
                 </div>
-                <p class="profile-bio2" id="userbio"></p>
-                <div class="profile-fact">
-                    <p><span id="profile-icon" class="material-symbols-outlined">calendar_today</span><span id="datejoined"></span></p>
-                    <p><span  id="profile-icon" class="material-symbols-outlined">location_on</span><span id="userlocation"></span></p>
-                    <p><span  id="profile-icon" class="material-symbols-outlined">link</span><span><a href="" id="url"></a></span></p>
+                <div class="top_section_stat_card">
+                    <p id="user_following" class="stat_number"></p>
+                    <p class="stat_info">Following</p>
                 </div>
-            </div>
-        </section>
-        <section class="profile-stats">
-        <div class="stats-card">
-            <div class="stats-heading">
-                <p>GLOBAL REACH</p>
-                <p><span class="material-symbols-outlined">group</span></p>
-            </div>
-            <p class="stats-figure" id="userfollowers"></p>
-            <p class="stats-bio">Active Followers</p>
-            <div class="stats-display"><img src="image/image.png" alt="followers img"></div>
-        </div>
-        <div class="stats-card">
-            <div class="stats-heading">
-                <p>OUTPUT</p>
-                <p><span class="material-symbols-outlined">terminal</span></p>
-            </div>
-            <p class="stats-figure" id="user_public_repos"></p>
-            <p class="stats-bio">Public Repositories</p>
-            <div class="stats-display2">
-                <!-- <div class="stats-display2-meter"></div> -->
-                <!-- <p class="stats-display2-bio">Top 5% of active contributors</p> -->
+                <div class="top_section_stat_card">
+                    <p id="user_public_repos" class="stat_number"></p>
+                    <p class="stat_info">Repos</p>
+                </div>
             </div>
         </div>
-        <div class="stats-card">
-            <div class="stats-heading">
-                <p>NETWORK</p>
-                <p><span class="material-symbols-outlined">person_add</span></p>
-            </div>
-            <p class="stats-figure" id="user_following"></p>
-            <p class="stats-bio">Developer Following</p>
-            <div class="stats-display2">
-                <div class="stats-display3"><span class="material-symbols-outlined">trending_up</span>+12%</div>
-                <div class="stats-display2-bio">vs last month</div>
+        <div class="top_section_card">
+            <p class="Estimated">Estimated Developer Worth</p>
+            <p id="account_worth">$42,930</p>
+            <div class="confi_and_details">
+                <div class="confidence">
+                    <p>Analysis Confidence</p>
+                    <div class="confidence_meter"></div>
+                </div>
+                <button id="details_btn">DETAILS <span id="arrow_left" class="material-symbols-outlined">arrow_forward</span></button>
             </div>
         </div>
     </section>
-    </main>
+    <!-- ai insight section -->
+    <section class="ai_insight">
+
+    </section>
     <script src="../assets/js/profile.js"></script>
     <script src="navbar.js"></script>
 </body>

@@ -5,7 +5,7 @@ const userid = params.get("userid");
 
 
 const userimage = document.getElementById("userimage");
-const username = document.getElementById("username");
+const user_name = document.getElementById("username");
 const profilestage = document.getElementById("profilestage");
 const userbio = document.getElementById("userbio");
 const datejoined = document.getElementById("datejoined");
