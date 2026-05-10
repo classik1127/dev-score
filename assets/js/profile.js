@@ -6,11 +6,11 @@ const userid = params.get("userid");
 
 const userimage = document.getElementById("userimage");
 const user_name = document.getElementById("username");
-const profilestage = document.getElementById("profilestage");
+// const profilestage = document.getElementById("profilestage");
 const userbio = document.getElementById("userbio");
-const datejoined = document.getElementById("datejoined");
-const userlocation = document.getElementById("userlocation");
-const url = document.getElementById("url");
+// const datejoined = document.getElementById("datejoined");
+// const userlocation = document.getElementById("userlocation");
+// const url = document.getElementById("url");
 const userfollowers = document.getElementById("userfollowers");
 const user_public_repos = document.getElementById("user_public_repos");
 const user_following = document.getElementById("user_following");
@@ -29,10 +29,10 @@ fetch(`https://api.github.com/users/${userid}`)
         userimage.src = datainfo.avatar_url;
         username.textContent = datainfo.name;
         userbio.textContent = datainfo.bio;
-        datejoined.textContent = `Joined ${datainfo.created_at.slice(0, 10)}`;
-        userlocation.textContent = datainfo.location;
-        url.href = datainfo.html_url;
-        url.textContent = datainfo.html_url.slice(19);
+        // datejoined.textContent = `Joined ${datainfo.created_at.slice(0, 10)}`;
+        // userlocation.textContent = datainfo.location;
+        // url.href = datainfo.html_url;
+        // url.textContent = datainfo.html_url.slice(19);
         userfollowers.textContent = datainfo.followers.toLocaleString();
         user_public_repos.textContent = datainfo.public_repos;
         user_following.textContent = datainfo.following;
@@ -43,12 +43,4 @@ fetch(`https://api.github.com/users/${userid}`)
             userlocation.textContent = "Not Available";
         }
 
-    });
-
-
-
-fetch(`https://api.github.com/users/${userid}/repos`)
-    .then((response) => response.json())
-    .then((data) => {
-        console.log(data);
     });
