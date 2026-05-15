@@ -6,7 +6,7 @@ const userid = params.get("userid");
 
 const userimage = document.getElementById("userimage");
 const user_name = document.getElementById("username");
-// const profilestage = document.getElementById("profilestage");
+const account_worth = document.getElementById("account_worth");
 const userbio = document.getElementById("userbio");
 // const datejoined = document.getElementById("datejoined");
 // const userlocation = document.getElementById("userlocation");
@@ -38,9 +38,37 @@ fetch(`https://api.github.com/users/${userid}`)
         user_following.textContent = datainfo.following;
 
 
+        // if (userlocation.textContent === "") {
+        //     userlocation.textContent = "Not Available";
+        // }
 
-        if (userlocation.textContent === "") {
-            userlocation.textContent = "Not Available";
+        userworth();
+
+        function  userworth() {
+            const created_at = new Date(datainfo.created_at).getFullYear();
+            const current_year = new Date().getFullYear();
+
+            const account_age = current_year - created_at;
+
+            const followers = datainfo.followers;
+            const public_repos = datainfo.public_repos;
+            const following = datainfo.following;
+
+            const worth = 
+                followers * 20  +
+                public_repos * 15 -
+                following * 2 +
+                account_age * 100;
+                
+                const realworth = worth.toLocaleString("en-US", {
+                    style: "currency",
+                    currency: "USD",
+                });
+                account_worth.textContent = realworth;
+                console.log(realworth);
         }
 
+
     });
+    
+
