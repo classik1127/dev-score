@@ -28,7 +28,7 @@ fetch(`https://api.github.com/users/${userid}`)
         console.log(datainfo);
         userimage.src = datainfo.avatar_url;
         username.textContent = datainfo.name;
-        userbio.textContent = datainfo.bio;
+        userbio.textContent =  datainfo.bio ? userbio.textContent = `"${datainfo.bio}"` : userbio.textContent = "No bio available";
         // datejoined.textContent = `Joined ${datainfo.created_at.slice(0, 10)}`;
         // userlocation.textContent = datainfo.location;
         // url.href = datainfo.html_url;
@@ -45,6 +45,7 @@ fetch(`https://api.github.com/users/${userid}`)
         userworth();
 
         function  userworth() {
+            let worth = 0;
             const created_at = new Date(datainfo.created_at).getFullYear();
             const current_year = new Date().getFullYear();
 
@@ -54,18 +55,31 @@ fetch(`https://api.github.com/users/${userid}`)
             const public_repos = datainfo.public_repos;
             const following = datainfo.following;
 
-            const worth = 
-                followers * 20  +
-                public_repos * 15 -
-                following * 2 +
-                account_age * 100;
-                
+
+
+            // the worth calculation is based on the number of followers, public repositories, following and account age.
+            worth += followers * 5 ;
+            worth += public_repos * 4; 
+            worth -= following * 2;
+            worth += account_age * 10;
+
+            datainfo.bio ? worth += datainfo.bio.length * 0.5 : worth -= 1;
+            datainfo.location ? worth += 20 * 0.5 : worth -= 1;
+            datainfo.blog ? worth += datainfo.blog.length * 0.5 : worth -= 1;
+            datainfo.twitter_username ? worth +=10 : worth -= 1;
+            datainfo.company ? worth += 10 : worth -= 1;
+            datainfo.email ? worth += 10 : worth -= 1;
+            datainfo.hireable ? worth += 10 : worth -= 1;
+            datainfo.public_gists ? worth += datainfo.public_gists * 3 : worth -= 1;
+            
+
+
+    
                 const realworth = worth.toLocaleString("en-US", {
                     style: "currency",
                     currency: "USD",
                 });
                 account_worth.textContent = realworth;
-                console.log(realworth);
         }
 
 
