@@ -1,0 +1,95 @@
+{
+    "follower":
+    [
+        {
+            "min": 0,
+            "title": "new developer"
+        },
+        {
+            "min": 0,
+            "title": "new developer"
+        }, 
+        {
+            "min": 0,
+            "title": "new developer"
+        },
+        {
+            "min": 0,
+            "title": "new developer"
+        },
+        {
+            "min": 0,
+            "title": "new developer"
+        }
+    ],
+    "repos":
+    [
+        {
+            "min": 0,
+            "title": "new developer"
+        },
+        {
+            "min": 0,
+            "title": "new developer"
+        }, 
+        {
+            "min": 0,
+            "title": "new developer"
+        },
+        {
+            "min": 0,
+            "title": "new developer"
+        },
+        {
+            "min": 0,
+            "title": "new developer"
+        }
+    ],
+    "following":
+    [
+        {
+            "min": 0,
+            "title": "new developer"
+        },
+        {
+            "min": 0,
+            "title": "new developer"
+        }, 
+        {
+            "min": 0,
+            "title": "new developer"
+        },
+        {
+            "min": 0,
+            "title": "new developer"
+        },
+        {
+            "min": 0,
+            "title": "new developer"
+        }
+    ],
+    "acc_age":
+    [
+        {
+            "min": 0,
+            "title": "new developer"
+        },
+        {
+            "min": 0,
+            "title": "new developer"
+        }, 
+        {
+            "min": 0,
+            "title": "new developer"
+        },
+        {
+            "min": 0,
+            "title": "new developer"
+        },
+        {
+            "min": 0,
+            "title": "new developer"
+        }
+    ]
+
+}

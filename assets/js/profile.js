@@ -83,6 +83,16 @@ fetch(`https://api.github.com/users/${userid}`)
         }
 
 
+        // for fetching the achievements of the user and displaying them on the profile page
+
+                    fetch("../data/achievement.json")
+                         .then((response) => response.json())
+                         .then(data => {
+                            console.log(data.follower);
+                         })
+                         
+
     });
     
+
 

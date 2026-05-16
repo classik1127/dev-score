@@ -170,6 +170,50 @@ body{
     min-width: 300px;
     }
 }
+
+.achievements_section{
+    margin-top: 20px;
+}
+.achievement_title{
+    color: #bfb8c6;
+    font-size: 1.5rem;
+}
+.achievement_card{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+.achievement_child{
+    border: 2px solid;
+    min-width: 100px;
+    max-width: 240px;
+    flex: 1;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bfb8c6;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 450px){
     .top_section_stat_card {
     background-color: #252932;
