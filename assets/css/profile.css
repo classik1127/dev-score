@@ -161,3 +161,21 @@ body{
 /* #details_btn:hover + #arrow_left{
     transform: scale(2);
 } */ 
+@media screen and (max-width: 956px){
+    .top_section_card:last-child{
+    min-width: 300px;
+    max-width: none;
+    }
+    .top_section_card:first-child{
+    min-width: 300px;
+    }
+}
+@media screen and (max-width: 450px){
+    .top_section_stat_card {
+    background-color: #252932;
+    min-width: 50px;
+    max-width: 100px;
+    height: 50px;
+    flex: 1;
+   }
+}
