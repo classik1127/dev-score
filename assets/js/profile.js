@@ -177,15 +177,28 @@ fetch(`https://api.github.com/users/${userid}`)
            }
 
         }
+        animations(account_worth.textContent);
     });
-    animations();
+    
 
 // for the animation
-function animations() {
+function animations(realworth) {
+    console.log(realworth);
     
     const profile_card = document.getElementById("profile_card");
     setTimeout(() => {
         profile_card.classList.add("show")
     }, 200);
+
+    let currentworth = 0;
+    const update = setInterval(() => {
+        currentworth++;
+        account_worth.textContent = currentworth;
+        if (currentworth >= parseInt(realworth.replace(/[^0-9.-]+/g,""))    ) {
+         clearInterval(update)   
+        }
+    }, 1);
 } 
+
+
 
