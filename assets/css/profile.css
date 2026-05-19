@@ -161,16 +161,6 @@ body{
 /* #details_btn:hover + #arrow_left{
     transform: scale(2);
 } */ 
-@media screen and (max-width: 956px){
-    .top_section_card:last-child{
-    min-width: 300px;
-    max-width: none;
-    }
-    .top_section_card:first-child{
-    min-width: 300px;
-    }
-}
-
 .achievements_section{
     margin-top: 20px;
 }
@@ -185,7 +175,7 @@ body{
     margin-top: 20px;
 }
 .achievement_child{
-    border: 2px solid;
+    border: 2px solid ;
     min-width: 100px;
     max-width: 240px;
     flex: 1;
@@ -211,6 +201,15 @@ body{
 
 
 
+@media screen and (max-width: 956px){
+    .top_section_card:last-child{
+    min-width: 300px;
+    max-width: none;
+    }
+    .top_section_card:first-child{
+    min-width: 300px;
+    }
+}
 
 
 

@@ -85,13 +85,98 @@ fetch(`https://api.github.com/users/${userid}`)
 
         // for fetching the achievements of the user and displaying them on the profile page
 
-                    fetch("../data/achievement.json")
-                         .then((response) => response.json())
-                         .then(data => {
-                            console.log(data.follower);
-                         })
-                         
 
+        const achievement1 = document.getElementById("achievement1");
+        const achievement2 = document.getElementById("achievement2");
+        const achievement3 = document.getElementById("achievement3");
+        const achievement4 = document.getElementById("achievement4");
+
+        rank(datainfo);
+
+        function rank(user_info) {
+            
+            
+           console.log(user_info);
+        //    for followers ranking 
+           if (user_info.followers < 10) {
+            achievement1.textContent = "New Developer";
+           }
+           else if (user_info.followers < 50) {
+            achievement1.textContent = "Rising Developer";
+           }
+           else if (user_info.followers < 100) {
+            achievement1.textContent = "Popular Dev";
+           }
+           else if (user_info.followers < 500) {
+            achievement1.textContent = "Community favorite";
+           }
+           else {
+            achievement1.textContent = "Developer Influencer";
+           }
+           
+
+        //   for following rankimg
+
+           if (user_info.following < 10) {
+            achievement2.textContent = "Connected Developer";
+           }
+           else if (user_info.following < 50) {
+            achievement2.textContent = "Community Explorer";
+           }
+           else if (user_info.following < 100) {
+            achievement2.textContent = "Network Builder";
+           }
+           else if (user_info.following < 500) {
+            achievement2.textContent = "Community Connector";
+           }
+           else {
+            achievement2.textContent = "Dev network Pro";
+           }
+
+
+           //   for repo rankimg
+           if (user_info.public_repos < 10) {
+            achievement3.textContent = "First Build";
+           }
+           else if (user_info.public_repos < 50) {
+            achievement3.textContent = "Project Creator";
+           }
+           else if (user_info.public_repos < 100) {
+            achievement3.textContent = "Code Architect";
+           }
+           else if (user_info.public_repos < 500) {
+            achievement3.textContent = "Repository king";
+           }
+           else {
+            achievement3.textContent = "Open  Source Titen";
+           }
+           
+
+           //   for age  rankimg
+           const created_at = new Date(datainfo.created_at).getFullYear();
+            const current_year = new Date().getFullYear();
+
+            const account_age = current_year - created_at;
+
+
+            console.log(account_age);
+           if (account_age < 1) {
+            achievement4.textContent = "Fresh Coder";
+           }
+           else if (account_age < 3) {
+            achievement4.textContent = "Rising Builder";
+           }
+           else if (account_age < 5) {
+            achievement4.textContent = "Experienced Developer";
+           }
+           else if (account_age < 10) {
+            achievement4.textContent = "Github Veteran";
+           }
+           else {
+            achievement4.textContent = "Code Ancestor";
+           }
+
+        }
     });
     
 
