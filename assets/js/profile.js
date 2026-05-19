@@ -178,6 +178,14 @@ fetch(`https://api.github.com/users/${userid}`)
 
         }
     });
-    
+    animations();
 
+// for the animation
+function animations() {
+    
+    const profile_card = document.getElementById("profile_card");
+    setTimeout(() => {
+        profile_card.classList.add("show")
+    }, 200);
+} 
 
